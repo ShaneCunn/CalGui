@@ -14,5 +14,50 @@
             <ColumnDefinition/>
 
         </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!--Number buttons-->
+        <Button x:Name="btn7" Grid.Row="2" Grid.Column="0" >7</Button>
+        <Button x:Name="btn8"  Grid.Row="2" Grid.Column="1" >8</Button>
+        <Button x:Name="btn9"  Grid.Row="2" Grid.Column="2" >9</Button>
+
+        <Button x:Name="btn4"  Grid.Row="3" Grid.Column="0" >4</Button>
+        <Button x:Name="btn5"  Grid.Row="3" Grid.Column="1" >5</Button>
+        <Button x:Name="btn6"  Grid.Row="3" Grid.Column="2" >6</Button>
+
+        <Button x:Name="btn1"  Grid.Row="4" Grid.Column="0" >1</Button>
+        <Button x:Name="btn2"  Grid.Row="4" Grid.Column="1" >2</Button>
+        <Button x:Name="btn3"  Grid.Row="4" Grid.Column="2" >3</Button>
+
+
+        <Button x:Name="btn0"  Grid.Row="5" Grid.Column="1" >0</Button>
+
+        <!--Maths buttons-->
+
+        <Button x:Name="btnPlus"  Grid.Row="1" Grid.Column="3" >+</Button>
+        <Button x:Name="btnNegative"  Grid.Row="2" Grid.Column="3" >-</Button>
+        <Button x:Name="btnMulti"  Grid.Row="3" Grid.Column="3" >*</Button>
+        <Button x:Name="btnDivide"  Grid.Row="4" Grid.Column="3" >/</Button>
+        <Button x:Name="btnEqual"  Grid.Row="5" Grid.Column="3" >=</Button>
+
+        <!--Clear buttons-->
+        <Button x:Name="btnCE"  Grid.Row="1" Grid.Column="0" >CE</Button>
+        <Button x:Name="btnClear"  Grid.Row="1" Grid.Column="1" >C</Button>
+        <Button x:Name="btnBackSpace"  Grid.Row="1" Grid.Column="2" Content="&lt;" />
+
+        <!--positive negative buttons-->
+        <Button x:Name="btnPlusMinus"  Grid.Row="5" Grid.Column="0">-+</Button>
+
+        <!--Display Box-->
+        <TextBox x:Name="textDisplay"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" 
+                 IsReadOnly="True" TextAlignment="Right" VerticalAlignment="Bottom" FontSize="30" BorderThickness="0">0</TextBox>
     </Grid>
 </Window>

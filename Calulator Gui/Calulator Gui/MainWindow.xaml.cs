@@ -236,6 +236,7 @@ namespace Calulator_Gui
             number1 = 0;
             number2 = 0;
             operations = "";
+            textDisplay.Text = "0";
         }
 
         private void btnBackSpace_Click(object sender, RoutedEventArgs e)

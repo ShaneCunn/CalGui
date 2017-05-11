@@ -21,7 +21,7 @@ namespace Calulator_Gui
     public partial class MainWindow : Window
     {
 
-        long number1 = 0, number2 = 0;
+        double number1 = 0, number2 = 0;
         string operations = "";
         public MainWindow()
         {
@@ -194,7 +194,7 @@ namespace Calulator_Gui
             operations = "*";
             textDisplay.Text = "0";
         }
-
+        
         private void btnDivide_Click(object sender, RoutedEventArgs e)
         {
             operations = "/";
@@ -270,7 +270,20 @@ namespace Calulator_Gui
 
         }
 
-        
+        private void btnDecimal_Click(object sender, RoutedEventArgs e)
+        {
+            if (operations == "")
+            {
+                number1 = (number1 * 10) + 9;
+                textDisplay.Text = number1.ToString();
+
+            }
+            else
+            {
+                number2 = (number2 * 10) + 9;
+                textDisplay.Text = number2.ToString();
+            }
+        }
 
         private void btnCE_Click(object sender, RoutedEventArgs e)
         {

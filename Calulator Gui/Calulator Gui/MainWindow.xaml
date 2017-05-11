@@ -27,47 +27,85 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
-            <RowDefinition/>
+           
 
 
         </Grid.RowDefinitions>
 
+        <!--Top buttons-->
+
+        <Button x:Name="btnPitch" Grid.Row="1" Grid.Column="0" >Pitch</Button>
+        <Button x:Name="btnRise" Grid.Row="1" Grid.Column="1" >Rise</Button>
+        <Button x:Name="btnRun" Grid.Row="1" Grid.Column="2" >Run</Button>
+        <Button x:Name="btnDiag" Grid.Row="1" Grid.Column="3" >Diag</Button>
+        <Button x:Name="btnHip" Grid.Row="1" Grid.Column="4" >Hip/V</Button>
+
+
+        <!--second row buttons-->
+
+        <Button x:Name="btnCompMiter" Grid.Row="2" Grid.Column="0" >CompMiter</Button>
+        <Button x:Name="btnStair" Grid.Row="2" Grid.Column="1" >Stair</Button>
+        <Button x:Name="btnArc" Grid.Row="2" Grid.Column="2" >Arc</Button>
+        <Button x:Name="btnCirc" Grid.Row="2" Grid.Column="3" >Circ</Button>
+        <Button x:Name="btnJack" Grid.Row="2" Grid.Column="4" >Jack</Button>
+
+        <!--third row buttons-->
+
+        <Button x:Name="btnspa2" Grid.Row="3" Grid.Column="0" >M</Button>
+        <Button x:Name="btnMeter" Grid.Row="3" Grid.Column="1" >Length</Button>
+        <Button x:Name="btnLength" Grid.Row="3" Grid.Column="2" >Width</Button>
+        <Button x:Name="btnWidth" Grid.Row="3" Grid.Column="3" >Height</Button>
+        <Button x:Name="btnPercent" Grid.Row="3" Grid.Column="4" >%</Button>
+        
+        
+        <!-- fourth row buttons-->
+
+        <Button x:Name="btnYards" Grid.Row="4" Grid.Column="0" >Yds</Button>
+        <Button x:Name="btnFeet" Grid.Row="4" Grid.Column="1" >Feet</Button>
+        <Button x:Name="btnInch" Grid.Row="4" Grid.Column="2" >Inch</Button>
+        <Button x:Name="btnDivide2"  Grid.Row="4" Grid.Column="3"  >/</Button>
+        <Button x:Name="btnBackSpace"  Grid.Row="4" Grid.Column="4" Content="&lt;" Click="btnBackSpace_Click" />
+
+        <!-- Memory row buttons-->
+
+        <Button x:Name="btnConv" Grid.Row="5" Grid.Column="0" >Conv</Button>
+        <Button x:Name="btnStor" Grid.Row="6" Grid.Column="0" >Stor</Button>
+        <Button x:Name="btnRecall" Grid.Row="7" Grid.Column="0" >Rcl</Button>
+        <Button x:Name="btnMemoryPlus" Grid.Row="8" Grid.Column="0" >M+</Button>
+
+
         <!--Number buttons-->
-        <Button x:Name="btn7" Grid.Row="5" Grid.Column="0" Click="btn7_Click" >7</Button>
-        <Button x:Name="btn8"  Grid.Row="5" Grid.Column="1" Click="btn8_Click" >8</Button>
-        <Button x:Name="btn9"  Grid.Row="5" Grid.Column="2" Click="btn9_Click">9</Button>
+        
+        <Button x:Name="btn7" Grid.Row="5" Grid.Column="1" Click="btn7_Click" >7</Button>
+        <Button x:Name="btn8"  Grid.Row="5" Grid.Column="2" Click="btn8_Click" >8</Button>
+        <Button x:Name="btn9"  Grid.Row="5" Grid.Column="3" Click="btn9_Click">9</Button>
 
-        <Button x:Name="btn4"  Grid.Row="6" Grid.Column="0" Click="btn4_Click">4</Button>
-        <Button x:Name="btn5"  Grid.Row="6" Grid.Column="1" Click="btn5_Click">5</Button>
-        <Button x:Name="btn6"  Grid.Row="6" Grid.Column="2" Click="btn6_Click">6</Button>
+        <Button x:Name="btn4"  Grid.Row="6" Grid.Column="1" Click="btn4_Click">4</Button>
+        <Button x:Name="btn5"  Grid.Row="6" Grid.Column="2" Click="btn5_Click">5</Button>
+        <Button x:Name="btn6"  Grid.Row="6" Grid.Column="3" Click="btn6_Click">6</Button>
 
-        <Button x:Name="btn1"  Grid.Row="7" Grid.Column="0" Click="btn1_Click" >1</Button>
-        <Button x:Name="btn2"  Grid.Row="7" Grid.Column="1" Click="btn2_Click" >2</Button>
-        <Button x:Name="btn3"  Grid.Row="7" Grid.Column="2" Click="btn3_Click" >3</Button>
+        <Button x:Name="btn1"  Grid.Row="7" Grid.Column="1" Click="btn1_Click" >1</Button>
+        <Button x:Name="btn2"  Grid.Row="7" Grid.Column="2" Click="btn2_Click" >2</Button>
+        <Button x:Name="btn3"  Grid.Row="7" Grid.Column="3" Click="btn3_Click" >3</Button>
 
         <Button x:Name="btn0"  Grid.Row="8" Grid.Column="1" Click="btn0_Click" >0</Button>
 
         <!--Maths buttons-->
-
-        <Button x:Name="btnPlus"  Grid.Row="4" Grid.Column="3" Click="btnPlus_Click" >+</Button>
-        <Button x:Name="btnNegative"  Grid.Row="5" Grid.Column="3" Click="btnNegative_Click" >-</Button>
-        <Button x:Name="btnMulti"  Grid.Row="6" Grid.Column="3" Click="btnMulti_Click" >*</Button>
-        <Button x:Name="btnDivide"  Grid.Row="7" Grid.Column="3" Click="btnDivide_Click" >/</Button>
-        <Button x:Name="btnEqual"  Grid.Row="8" Grid.Column="3" Click="btnEqual_Click" >=</Button>
+        <Button x:Name="btnDivide"   Grid.Row="5" Grid.Column="4" Click="btnDivide_Click" >/</Button>
+        <Button x:Name="btnMulti"  Grid.Row="6" Grid.Column="4" Click="btnMulti_Click" >*</Button>
+        <Button x:Name="btnNegative"  Grid.Row="7" Grid.Column="4" Click="btnNegative_Click" >-</Button>
+        <Button x:Name="btnPlus"  Grid.Row="8" Grid.Column="4" Click="btnPlus_Click" >+</Button>
+        <Button x:Name="btnEqual"  Grid.Row="9" Grid.Column="3" Click="btnEqual_Click" >=</Button>
 
         <!--Clear buttons-->
-        <Button x:Name="btnCE"  Grid.Row="4" Grid.Column="0" Click="btnCE_Click" >CE</Button>
-        <Button x:Name="btnClear"  Grid.Row="4" Grid.Column="1" Click="btnClear_Click" >C</Button>
-        <Button x:Name="btnBackSpace"  Grid.Row="4" Grid.Column="2" Content="&lt;" Click="btnBackSpace_Click" />
 
         <!--positive negative buttons-->
-        <Button x:Name="btnPlusMinus"  Grid.Row="8" Grid.Column="0" Click="btnPlusMinus_Click">-+</Button>
 
-        <!--positive negative buttons-->
-        <Button x:Name="btnDecimal"  Grid.Row="8" Grid.Column="2" Click="btnDecimal_Click">.</Button>
+        <!--Decimal buttons-->
+        <Button x:Name="btnDecimal"  Grid.Row="9" Grid.Column="2" Click="btnDecimal_Click">.</Button>
 
         <!--Display Box-->
-        <TextBox x:Name="textDisplay"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" 
+        <TextBox x:Name="textDisplay"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" 
                  IsReadOnly="True" TextAlignment="Right" VerticalAlignment="Bottom" FontSize="30" BorderThickness="0">0</TextBox>
    
     

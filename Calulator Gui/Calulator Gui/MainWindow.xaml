@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Calulator_Gui"
         mc:Ignorable="d"
         Title="Calulator" Height="630" Width="380">
-    <Grid>
+    <Grid Background="#FFECEDEE">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -62,13 +62,13 @@
 
         <Button x:Name="btnYards" Grid.Row="4" Grid.Column="0" >Yds</Button>
         <Button x:Name="btnFeet" Grid.Row="4" Grid.Column="1" >Feet</Button>
-        <Button x:Name="btnInch" Grid.Row="4" Grid.Column="2" >Inch</Button>
+        <Button x:Name="btnInch" Grid.Row="4" Grid.Column="2" Click="btnInch_Click" >Inch</Button>
         <Button x:Name="btnDivide2"  Grid.Row="4" Grid.Column="3"  >/</Button>
-        <Button x:Name="btnBackSpace"  Grid.Row="4" Grid.Column="4" Content="&lt;" Click="btnBackSpace_Click" />
+        <Button x:Name="btnClear"  Grid.Row="4" Grid.Column="4" Content="Clear" Click=" btnClear_Click" Background="#FFF63443" FontWeight="Bold" />
 
         <!-- Memory row buttons-->
 
-        <Button x:Name="btnConv" Grid.Row="5" Grid.Column="0" >Conv</Button>
+        <Button x:Name="btnConv" Grid.Row="5" Grid.Column="0" Background="#FFEDBF14" >Conv</Button>
         <Button x:Name="btnStor" Grid.Row="6" Grid.Column="0" >Stor</Button>
         <Button x:Name="btnRecall" Grid.Row="7" Grid.Column="0" >Rcl</Button>
         <Button x:Name="btnMemoryPlus" Grid.Row="8" Grid.Column="0" >M+</Button>

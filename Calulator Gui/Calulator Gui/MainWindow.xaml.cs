@@ -256,17 +256,7 @@ namespace Calulator_Gui
 
         private void btnPlusMinus_Click(object sender, RoutedEventArgs e)
         {
-            if (operations == "")
-            {
-                number1 *= -1;
-                textDisplay.Text = number1.ToString();
-
-            }
-            else
-            {
-                number2 *= -1;
-                textDisplay.Text = number2.ToString();
-            }
+          
 
         }
 
@@ -281,6 +271,21 @@ namespace Calulator_Gui
             else
             {
                 number2 = (number2 * 10) + 9;
+                textDisplay.Text = number2.ToString();
+            }
+        }
+
+        private void btnInch_Click(object sender, RoutedEventArgs e)
+        {
+            if (operations == "")
+            {
+                number1 = (number1 * 0.39370);
+                textDisplay.Text = number1.ToString();
+
+            }
+            else
+            {
+                number2 = (number2 * 0.39370);
                 textDisplay.Text = number2.ToString();
             }
         }

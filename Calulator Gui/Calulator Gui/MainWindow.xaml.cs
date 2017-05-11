@@ -237,7 +237,7 @@ namespace Calulator_Gui
             number2 = 0;
             operations = "";
             textDisplay.Text = "0";
-        }
+         }
 
         private void btnBackSpace_Click(object sender, RoutedEventArgs e)
         {

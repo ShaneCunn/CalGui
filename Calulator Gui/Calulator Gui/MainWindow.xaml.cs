@@ -290,6 +290,23 @@ namespace Calulator_Gui
             }
         }
 
+        private void btnMeter_Click(object sender, RoutedEventArgs e)
+        {
+            if (operations == "")
+            {
+                number1 = (number1 /1000);
+                textDisplay.Text = number1.ToString();
+
+            }
+            else
+            {
+                number2 = (number2 / 1000);
+                textDisplay.Text = number2.ToString();
+            }
+
+            //textDisplay.Text = "meter Clicked";
+        }
+
         private void btnCE_Click(object sender, RoutedEventArgs e)
         {
             if (operations == "")

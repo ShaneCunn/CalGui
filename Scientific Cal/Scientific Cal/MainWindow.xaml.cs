@@ -274,12 +274,35 @@ namespace Scientific_Cal
             textDisplay.Text = "0";
         }
 
-      // End of Clear row
+        // End of Clear row
 
-     
 
-      
+        // SQ root row
+        private void btnSqRoot_Click(object sender, RoutedEventArgs e)
+        {
 
-       
+        }
+        private void btnTenX_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void btnLog_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnExp_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnMod_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        // End of SQ root row
+
+
     }
 }

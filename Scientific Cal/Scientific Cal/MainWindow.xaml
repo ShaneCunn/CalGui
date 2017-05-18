@@ -50,16 +50,14 @@
         <Button x:Name="btnJack" Grid.Row="2" Grid.Column="4" >Jack</Button>
 
         <!--third row buttons-->
-
-        <Button x:Name="btnMeter" Grid.Row="3" Grid.Column="0"  >M</Button>
-        <Button x:Name="btnLength" Grid.Row="3" Grid.Column="1" >Length</Button>
-        <Button x:Name="btnWidth" Grid.Row="3" Grid.Column="2" >Width</Button>
-        <Button x:Name="btnSQRoot" Grid.Row="2" Grid.Column="3" Margin="0,34.504,0,1.096" Grid.RowSpan="2" Content="Sq Root" />
-        <Button x:Name="btnPercent" Grid.Row="3" Grid.Column="4" >%</Button>
+        <Button x:Name="btnSQRoot" Grid.Row="2" Grid.Column="0" Margin="0,34.504,0,1.096" Grid.RowSpan="2" Content="Sq Root" Click="btnSqRoot_Click" />
+        <Button x:Name="btnTenX" Grid.Row="3" Grid.Column="1"  Click="btnTenX_Click">10x</Button>
+        <Button x:Name="btnLog" Grid.Row="3" Grid.Column="2" Click="btnLog_Click">Log</Button>
+        <Button x:Name="btnExp" Grid.Row="3" Grid.Column="3" Click="btnExp_Click">Exp</Button>
+        <Button x:Name="btnMod" Grid.Row="3" Grid.Column="4" Click="btnMod_Click">Mod</Button>
 
 
         <!-- fourth row buttons-->
-
         <Button x:Name="btnSpare1" Grid.Row="4" Grid.Column="0" Content="Spare1" Click="btnSpare1_Click" />
         <Button x:Name="btnPlusMinus" Grid.Row="4" Grid.Column="1" Content="+/-" Click="btnPlusMinus_Click" />
         <Button x:Name="btnBackSpace" Grid.Row="4" Grid.Column="2"  Content="BackSp" Click="btnBackSpace_Click"  />

@@ -213,11 +213,11 @@ namespace Calulator_Gui
 
         private void btnEqual_Click(object sender, RoutedEventArgs e)
         {
-            switch (operations)
-            {
-                case "+":
-                    textDisplay.Text = (number1 + number2).ToString();
-                    break;
+				switch (operations)
+				{
+					case "+":
+						textDisplay.Text = (number1 + number2).ToString();
+						break;
                 case "-":
                     textDisplay.Text = (number1 - number2).ToString();
                     break;
@@ -233,10 +233,10 @@ namespace Calulator_Gui
 
         private void btnClear_Click(object sender, RoutedEventArgs e)
         {
-            number1 = 0;
-            number2 = 0;
-            operations = "";
-            textDisplay.Text = "0";
+				number1 = 0;
+				number2 = 0;
+				operations = "";
+				textDisplay.Text = "0";
          }
 
         private void btnBackSpace_Click(object sender, RoutedEventArgs e)
@@ -257,6 +257,7 @@ namespace Calulator_Gui
         private void btnPlusMinus_Click(object sender, RoutedEventArgs e)
         {
           
+
 
         }
 

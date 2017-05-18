@@ -60,8 +60,8 @@
 
         <!-- fourth row buttons-->
 
-        <Button x:Name="btnSpare1" Grid.Row="4" Grid.Column="0" Content="Spare1" />
-        <Button x:Name="btnFeet" Grid.Row="4" Grid.Column="1" Content="+/-" />
+        <Button x:Name="btnSpare1" Grid.Row="4" Grid.Column="0" Content="Spare1" Click="btnSpare1_Click" />
+        <Button x:Name="btnPlusMinus" Grid.Row="4" Grid.Column="1" Content="+/-" Click="btnPlusMinus_Click" />
         <Button x:Name="btnBackSpace" Grid.Row="4" Grid.Column="2"  Content="BackSp" Click="btnBackSpace_Click"  />
         <Button x:Name="btnClearEntry"  Grid.Row="4" Grid.Column="3"  Content="CE" Click="btnClearEntry_Click"  />
         <Button x:Name="btnClear"  Grid.Row="4" Grid.Column="4" Content="Clear"  Background="#FFF63443" FontWeight="Bold" Click="btnClear_Click" />

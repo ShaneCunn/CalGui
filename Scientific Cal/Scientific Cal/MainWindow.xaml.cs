@@ -195,29 +195,27 @@ namespace Scientific_Cal
         {
 
             num2 = Convert.ToDouble(textDisplay.Text);
-            switch (NumOper)
-            {
 
+            switch (NumOper) // switch on the string that is passed as a parameter. 
+            {
                 case "+":
-                    textDisplay.Text = (num1 + num2).ToString();
+                    textDisplay.Text = (num1 + num2).ToString(); /// add function
                     break;
                 case "-":
-                    textDisplay.Text = (num1 - num2).ToString();
+                    textDisplay.Text = (num1 - num2).ToString(); //  minus function
                     break;
                 case "*":
-                    textDisplay.Text = (num1 * num2).ToString();
+                    textDisplay.Text = (num1 * num2).ToString(); //  multp function
                     break;
                 case "/":
 
-                    if (num1 == 0)
+                    if (num1 == 0) //  divide function with divide by zero error checking
                     {
-
                         textDisplay.Text = "0";
                         break;
                     }
                     else
                     {
-
                         textDisplay.Text = (num1 / num2).ToString();
                         break;
                     }
@@ -226,26 +224,34 @@ namespace Scientific_Cal
 
 
         }
-        private void btnClear_Click(object sender, RoutedEventArgs e)
+
+
+        // Clear Row
+        private void btnSpare1_Click(object sender, RoutedEventArgs e)
         {
-            num1 = 0;
-            num2 = 0;
-            NumOper = "";
-            textDisplay.Text = "0";
+
+        }
+
+        private void btnPlusMinus_Click(object sender, RoutedEventArgs e)
+        {
+            //num1 = Math.Abs(Convert.ToDouble(textDisplay.ToString()));
+
+            num1 = Convert.ToDouble(textDisplay.Text) * -1;
+            textDisplay.Text = num1.ToString();
         }
 
         private void btnBackSpace_Click(object sender, RoutedEventArgs e)
         {
             if (textDisplay.Text.Length > 0)
             {
-
-                textDisplay.Text = textDisplay.Text.Substring(0, (textDisplay.Text.Length - 1));  // remove the last letter from the textbox display
+                // remove the last letter from the textbox display
+                textDisplay.Text = textDisplay.Text.Substring(0, (textDisplay.Text.Length - 1));
             }
         }
 
         private void btnClearEntry_Click(object sender, RoutedEventArgs e)
         {
-
+            // clear last entry on screen
             if (NumOper == "")
             {
 
@@ -259,5 +265,21 @@ namespace Scientific_Cal
             textDisplay.Text = "0";
 
         }
+
+        private void btnClear_Click(object sender, RoutedEventArgs e)
+        {
+            num1 = 0;
+            num2 = 0;
+            NumOper = "";
+            textDisplay.Text = "0";
+        }
+
+      // End of Clear row
+
+     
+
+      
+
+       
     }
 }

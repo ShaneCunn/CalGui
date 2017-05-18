@@ -233,6 +233,10 @@ namespace Scientific_Cal
 
         private void btnLog_Click(object sender, RoutedEventArgs e)
         {
+            //  log function , using log base 10
+            num1 = Convert.ToDouble(textDisplay.Text);
+            num2 = Math.Log10(num1);
+            textDisplay.Text = num2.ToString();
         }
 
         private void btnExp_Click(object sender, RoutedEventArgs e)

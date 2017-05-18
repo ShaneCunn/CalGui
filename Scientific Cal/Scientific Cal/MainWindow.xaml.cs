@@ -171,6 +171,8 @@ namespace Scientific_Cal
         // Clear Row
         private void btnSpare1_Click(object sender, RoutedEventArgs e)
         {
+
+            //TODO: assign button/ function
         }
 
         private void btnPlusMinus_Click(object sender, RoutedEventArgs e)
@@ -241,12 +243,31 @@ namespace Scientific_Cal
 
         private void btnExp_Click(object sender, RoutedEventArgs e)
         {
+            //TODO: add exp function
+            //num1 = Convert.ToDouble(textDisplay.Text);
+
         }
+
+
 
         private void btnMod_Click(object sender, RoutedEventArgs e)
         {
+            //TODO: add modulus function
+
+            num1 = Convert.ToDouble(textDisplay.Text);
+            textDisplay.Text = num1 + " Mod ";
+            
+
+
+
         }
 
         // End of SQ root row
+
+
+        private void btnDecimal_Click(object sender, RoutedEventArgs e)
+        {// add demical to display box
+            textDisplay.Text += ".";
+        }
     }
 }

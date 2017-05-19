@@ -11,7 +11,7 @@ namespace Scientific_Cal
         private double num1, num2;
 
         private string NumOper = "";
-
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -19,86 +19,53 @@ namespace Scientific_Cal
 
         private void btn1_Click(object sender, RoutedEventArgs e)
         {
-            if (textDisplay.Text == "0" && textDisplay.Text != null)
-                textDisplay.Text = "1";
-            else
-                textDisplay.Text = textDisplay.Text + "1";
+            SetButtonValue("1");
         }
 
         private void btn2_Click(object sender, RoutedEventArgs e)
         {
-            if (textDisplay.Text == "0" && textDisplay.Text != null)
-                textDisplay.Text = "2";
-            else
-                textDisplay.Text = textDisplay.Text + "2";
+            SetButtonValue("2");
         }
 
         private void btn3_Click(object sender, RoutedEventArgs e)
         {
-            if (textDisplay.Text == "0" && textDisplay.Text != null)
-                textDisplay.Text = "3";
-            else
-                textDisplay.Text = textDisplay.Text + "3";
+            SetButtonValue("3");
         }
 
         private void btn4_Click(object sender, RoutedEventArgs e)
         {
-            if (textDisplay.Text == "0" && textDisplay.Text != null)
-                textDisplay.Text = "4";
-            else
-                textDisplay.Text = textDisplay.Text + "4";
+            SetButtonValue("4");
         }
 
         private void btn5_Click(object sender, RoutedEventArgs e)
         {
-            if (textDisplay.Text == "0" && textDisplay.Text != null)
-                textDisplay.Text = "5";
-            else
-                textDisplay.Text = textDisplay.Text + "5";
+            SetButtonValue("5");
         }
 
         private void btn6_Click(object sender, RoutedEventArgs e)
         {
-            if (textDisplay.Text == "0" && textDisplay.Text != null)
-                textDisplay.Text = "6";
-            else
-                textDisplay.Text = textDisplay.Text + "6";
+            SetButtonValue("6");
         }
 
         private void btn7_Click(object sender, RoutedEventArgs e)
         {
-            if (textDisplay.Text == "0" && textDisplay.Text != null)
-                textDisplay.Text = "7";
-            else
-                textDisplay.Text = textDisplay.Text + "7";
+            SetButtonValue("7");
         }
 
         private void btn8_Click(object sender, RoutedEventArgs e)
         {
-            if (textDisplay.Text == "0" && textDisplay.Text != null)
-                textDisplay.Text = "8";
-            else
-                textDisplay.Text = textDisplay.Text + "8";
+            SetButtonValue("8");
         }
-
-
+        
         private void btn9_Click(object sender, RoutedEventArgs e)
         {
-            if (textDisplay.Text == "0" && textDisplay.Text != null)
-                textDisplay.Text = "9";
-            else
-                textDisplay.Text = textDisplay.Text + "9";
+            SetButtonValue("9");
         }
-
-
+        
         private void btn0_Click(object sender, RoutedEventArgs e)
         {
-            if (textDisplay.Text == "0" && textDisplay.Text != null)
-                textDisplay.Text = "0";
-            else
-                textDisplay.Text = textDisplay.Text + "0";
+            SetButtonValue("0");
         }
-
 
         private void btnNegative_Click(object sender, RoutedEventArgs e)
         {
@@ -268,6 +235,15 @@ namespace Scientific_Cal
         private void btnDecimal_Click(object sender, RoutedEventArgs e)
         {// add demical to display box
             textDisplay.Text += ".";
+        }
+
+        // button value method
+        private void SetButtonValue(String value)
+        {
+            if (textDisplay.Text == "0" && textDisplay.Text != null)
+                textDisplay.Text = value;
+            else
+                textDisplay.Text = textDisplay.Text + value;
         }
     }
 }

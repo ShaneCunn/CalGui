@@ -131,6 +131,16 @@ namespace Scientific_Cal
                         textDisplay.Text = (num1 / num2).ToString();
                         break;
                     }
+
+                case "mod":
+                    textDisplayTop.Text = num1 + " Mod ";
+
+                    double result = num1 % num2;
+                    textDisplay.Text = result.ToString();
+
+
+                        
+                    break;
             }
         }
 
@@ -177,8 +187,9 @@ namespace Scientific_Cal
             num2 = 0;
             NumOper = "";
             textDisplay.Text = "0";
+            textDisplayTop.Text = "";
         }
-
+        
         // End of Clear row
 
 
@@ -219,14 +230,14 @@ namespace Scientific_Cal
 
         private void btnMod_Click(object sender, RoutedEventArgs e)
         {
-            //TODO: add modulus function
 
             num1 = Convert.ToDouble(textDisplay.Text);
-            textDisplay.Text = num1 + " Mod ";
-            
+            textDisplayTop.Text = num1 + " Mod ";
 
 
-
+            // num2 = Convert.ToDouble(textDisplay.Text);
+            NumOper = "mod";
+            textDisplay.Text = "0";
         }
 
         // End of SQ root row

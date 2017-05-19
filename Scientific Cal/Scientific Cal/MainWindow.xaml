@@ -103,8 +103,10 @@
         <Button x:Name="btnDecimal"  Grid.Row="9" Grid.Column="2" Click="btnDecimal_Click">.</Button>
 
         <!--Display Box-->
-        <TextBox x:Name="textDisplay"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" 
+        <TextBox x:Name="textDisplay"  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5" 
                  IsReadOnly="True" TextAlignment="Right" VerticalAlignment="Bottom" FontSize="30" BorderThickness="0">0</TextBox>
+        <TextBox x:Name="textDisplayTop"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" 
+                 IsReadOnly="True" TextAlignment="Right" VerticalAlignment="Bottom" FontSize="30" BorderThickness="0"></TextBox>
 
 
     </Grid>

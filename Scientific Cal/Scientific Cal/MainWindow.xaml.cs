@@ -136,12 +136,13 @@ namespace Scientific_Cal
 
                 case "mod":
                     textDisplayTop.Text = num1 + " Mod ";
-
                     double result = num1 % num2;
                     textDisplay.Text = result.ToString();
+                    break;
 
-
-
+                case "EXP":
+                    textDisplay.Text = Math.Pow(num1, num2).ToString();
+                    textDisplayTop.Text = "";
                     break;
             }
         }
@@ -223,8 +224,13 @@ namespace Scientific_Cal
 
         private void btnExp_Click(object sender, RoutedEventArgs e)
         {
-            //TODO: add exp function
-            //num1 = Convert.ToDouble(textDisplay.Text);
+            //TODO: add exp function, fix it to show 10^2 = 1000
+            num1 = Convert.ToDouble(textDisplay.Text);
+
+            textDisplayTop.Text = num1.ToString() + " Exp ";
+            textDisplay.Text = "";
+            NumOper = "EXP";
+
 
         }
 

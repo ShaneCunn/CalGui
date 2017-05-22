@@ -11,12 +11,12 @@ namespace Scientific_Cal
         private double num1, num2;
 
         private string NumOper = "";
-        
+
         public MainWindow()
         {
             InitializeComponent();
         }
-
+// Start of Number buttons
         private void btn1_Click(object sender, RoutedEventArgs e)
         {
             SetButtonValue("1");
@@ -56,31 +56,33 @@ namespace Scientific_Cal
         {
             SetButtonValue("8");
         }
-        
+
         private void btn9_Click(object sender, RoutedEventArgs e)
         {
             SetButtonValue("9");
         }
-        
+
         private void btn0_Click(object sender, RoutedEventArgs e)
         {
             SetButtonValue("0");
         }
+        // End of number buttons
 
+        //  Minus function
         private void btnNegative_Click(object sender, RoutedEventArgs e)
         {
             num1 = Convert.ToDouble(textDisplay.Text);
             textDisplay.Text = "0";
             NumOper = "-";
         }
-
+        // Multiple function
         private void btnMulti_Click(object sender, RoutedEventArgs e)
         {
             num1 = Convert.ToDouble(textDisplay.Text);
             textDisplay.Text = "0";
             NumOper = "*";
         }
-
+        // Divide function
         private void btnDivide_Click(object sender, RoutedEventArgs e)
         {
             if (textDisplay.Text != "0")
@@ -95,7 +97,7 @@ namespace Scientific_Cal
             }
         }
 
-
+        // Addition function
         private void btnPlus_Click(object sender, RoutedEventArgs e)
         {
             num1 = Convert.ToDouble(textDisplay.Text);
@@ -139,7 +141,7 @@ namespace Scientific_Cal
                     textDisplay.Text = result.ToString();
 
 
-                        
+
                     break;
             }
         }
@@ -180,7 +182,7 @@ namespace Scientific_Cal
                 num2 = 0;
             textDisplay.Text = "0";
         }
-
+        // Clear  function
         private void btnClear_Click(object sender, RoutedEventArgs e)
         {
             num1 = 0;
@@ -189,7 +191,7 @@ namespace Scientific_Cal
             textDisplay.Text = "0";
             textDisplayTop.Text = "";
         }
-        
+
         // End of Clear row
 
 
@@ -227,7 +229,7 @@ namespace Scientific_Cal
         }
 
 
-
+        // Modulus function
         private void btnMod_Click(object sender, RoutedEventArgs e)
         {
 

@@ -146,8 +146,10 @@ namespace Scientific_Cal
                     textDisplayTop.Text = "";
                     break;
 
-                case "xPower":
-                    textDisplay.Text = Math.Pow(num1, 3).ToString();
+                case "SQx":
+                    textDisplay.Text = Math.Pow(num1, num2).ToString();
+                    textDisplayTop.Text = "";
+
                     break;
 
 
@@ -190,7 +192,7 @@ namespace Scientific_Cal
                 num2 = 0;
             textDisplay.Text = "0";
         }
-       
+
         // Clear  function
         private void btnClear_Click(object sender, RoutedEventArgs e)
         {
@@ -275,18 +277,44 @@ namespace Scientific_Cal
                 textDisplay.Text = textDisplay.Text + value; // take in the string value and add it to the end of the string 
         }
 
+        
+
         //  second row, to the power of and so on
         private void btnX3_Click(object sender, RoutedEventArgs e)
         {
-           // textDisplay.Text += "test";
             num1 = Convert.ToDouble(textDisplay.Text);
-          //  NumOper = "xPower";
-
             textDisplay.Text = Math.Pow(num1, 3).ToString();
+        }
+
+       
+
+        private void btnSqX_Click(object sender, RoutedEventArgs e)
+        {
+            // to the power of x function 
+            num1 = Convert.ToDouble(textDisplay.Text);
+
+            textDisplayTop.Text = num1.ToString() + " ^ ";
+            textDisplay.Text = "";
+            NumOper = "SQx";
+
+        }
+        // sin-1 function
+        private void btnSinMinusOne_Click(object sender, RoutedEventArgs e)
+        {
+            num1 = Convert.ToDouble(textDisplay.Text);
+
+            textDisplay.Text = (Math.Asin(num1) / Math.PI * 180).ToString();
+        }
+
+        private void btnCosMinusOne_Click(object sender, RoutedEventArgs e)
+        {
 
         }
 
+        private void btnTanMinusOne_Click(object sender, RoutedEventArgs e)
+        {
 
+        }
 
     }
 }

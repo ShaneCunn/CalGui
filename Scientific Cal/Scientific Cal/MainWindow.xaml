@@ -43,11 +43,11 @@
 
         <!--second row buttons-->
 
-        <Button x:Name="btnCompMiter" Grid.Row="2" Grid.Column="0" >CompMiter</Button>
-        <Button x:Name="btnStair" Grid.Row="2" Grid.Column="1" >Stair</Button>
-        <Button x:Name="btnArc" Grid.Row="2" Grid.Column="2" >Arc</Button>
-        <Button x:Name="btnCirc" Grid.Row="2" Grid.Column="3" >Circ</Button>
-        <Button x:Name="btnJack" Grid.Row="2" Grid.Column="4" >Jack</Button>
+        <Button x:Name="btnX3" Grid.Row="2" Grid.Column="0" Click="btnX3_Click" >X3</Button>
+        <Button x:Name="btnSqX" Grid.Row="2" Grid.Column="1" >SqX</Button>
+        <Button x:Name="btnSinMinusOne" Grid.Row="2" Grid.Column="2" >Sin-1</Button>
+        <Button x:Name="btnCosMinusOne" Grid.Row="2" Grid.Column="3" >Cos-1</Button>
+        <Button x:Name="btnTanMinusOne" Grid.Row="2" Grid.Column="4" >Tan-1</Button>
 
         <!--third row buttons-->
         <Button x:Name="btnSQRoot" Grid.Row="2" Grid.Column="0" Margin="0,34.504,0,1.096" Grid.RowSpan="2" Content="Sq Root" Click="btnSqRoot_Click" />

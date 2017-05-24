@@ -16,7 +16,7 @@ namespace Scientific_Cal
         {
             InitializeComponent();
         }
-// Start of Number buttons
+        // Start of Number buttons
         private void btn1_Click(object sender, RoutedEventArgs e)
         {
             SetButtonValue("1");
@@ -69,6 +69,7 @@ namespace Scientific_Cal
         // End of number buttons
 
         //  Minus function
+
         private void btnNegative_Click(object sender, RoutedEventArgs e)
         {
             num1 = Convert.ToDouble(textDisplay.Text);
@@ -105,7 +106,7 @@ namespace Scientific_Cal
             NumOper = "+";
         }
 
-
+        // Equal button and switch function
         private void btnEqual_Click(object sender, RoutedEventArgs e)
         {
             num2 = Convert.ToDouble(textDisplay.Text);
@@ -144,6 +145,12 @@ namespace Scientific_Cal
                     textDisplay.Text = Math.Pow(num1, num2).ToString();
                     textDisplayTop.Text = "";
                     break;
+
+                case "xPower":
+                    textDisplay.Text = Math.Pow(num1, 3).ToString();
+                    break;
+
+
             }
         }
 
@@ -183,6 +190,7 @@ namespace Scientific_Cal
                 num2 = 0;
             textDisplay.Text = "0";
         }
+       
         // Clear  function
         private void btnClear_Click(object sender, RoutedEventArgs e)
         {
@@ -256,13 +264,29 @@ namespace Scientific_Cal
             textDisplay.Text += ".";
         }
 
+
+
         // button value method
         private void SetButtonValue(String value)
         {
             if (textDisplay.Text == "0" && textDisplay.Text != null)
                 textDisplay.Text = value;
             else
-                textDisplay.Text = textDisplay.Text + value;
+                textDisplay.Text = textDisplay.Text + value; // take in the string value and add it to the end of the string 
         }
+
+        //  second row, to the power of and so on
+        private void btnX3_Click(object sender, RoutedEventArgs e)
+        {
+           // textDisplay.Text += "test";
+            num1 = Convert.ToDouble(textDisplay.Text);
+          //  NumOper = "xPower";
+
+            textDisplay.Text = Math.Pow(num1, 3).ToString();
+
+        }
+
+
+
     }
 }
